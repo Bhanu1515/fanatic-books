@@ -120,10 +120,13 @@ header {
       position: relative;
       .bell-badge {
         position: absolute !important;
-        font-size: 16px;
+        font-size: 20px;
         top: -4px;
-        right: 8px;
+        right: 7px;
         color: $light-green !important;
+      }
+      .cart-icon{
+        width: 35px;
       }
       i {
         font-size: 25px;

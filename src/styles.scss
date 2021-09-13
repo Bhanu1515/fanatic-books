@@ -29,6 +29,38 @@
   z-index: 0;
 }
 
+.rating{
+  .a-icon.a-icon-star{
+    background-image: url(./assets/rating.png);
+    -webkit-background-size: 87px 151px;
+    background-size: 87px 151px;
+    background-repeat: no-repeat;
+  }
+  .a-icon-star, .a-icon-star-small {
+    display: block;
+    height: 20px;
+    width: 90px;
+  }
+  .a-star-5 {
+    background-position: 0px 0px;
+  }
+  .a-star-4-5 {
+    background-position: 0px -42px;
+  }
+  .a-star-4 {
+    background-position: 0px -22px;
+  }
+  .a-star-3-5 {
+    background-position: 0px -128px;
+  }
+  .a-star-3 {
+    background-position: 0px -61px;
+  }
+  .a-star-2 {
+    background-position: 0px -104px;
+  }
+}
+
 
 @media (min-width: 1300px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {

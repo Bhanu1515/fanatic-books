@@ -40,6 +40,18 @@
       background-color: $black;
       opacity: 0.82;
       color: $white;
+      .card-title{
+        color: $green;
+      }
+      .btn{
+        color: $green;
+        border-color: $green;
+        &:hover{
+          color: $white;
+          background-color: $green;
+        }
+      }
+      
     }
     &:hover .sec-2 {
       height: 100%;

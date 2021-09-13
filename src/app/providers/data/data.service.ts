@@ -11,7 +11,7 @@ export class DataService {
       description:
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam doloribus optio consectetur ex harum debitis, expedita non minima earum voluptatibus molestias deserunt fugiat necessitatibus et aspernatur cum quisquam rerum suscipit!',
       author: 'James Patterson',
-      rating: '4',
+      rating: '5',
       price: '15.90',
       imageURL: '../assets/placeholder-image.png',
       publisher: 'Grand Central Publishing',
@@ -26,7 +26,7 @@ export class DataService {
       description:
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam doloribus optio consectetur ex harum debitis, expedita non minima earum voluptatibus molestias deserunt fugiat necessitatibus et aspernatur cum quisquam rerum suscipit!',
       author: 'Paul Attaway',
-      rating: '4',
+      rating: '4-5',
       price: '24.57',
       imageURL: '../assets/placeholder-image.png',
       publisher: 'Grand Central Publishing',
@@ -71,7 +71,7 @@ export class DataService {
       description:
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam doloribus optio consectetur ex harum debitis, expedita non minima earum voluptatibus molestias deserunt fugiat necessitatibus et aspernatur cum quisquam rerum suscipit!',
       author: 'Dervla McTiernan ',
-      rating: '5',
+      rating: '3',
       price: '36.99',
       imageURL: '../assets/placeholder-image.png',
       publisher: 'Bolinda Publishing Pty Ltd ',
@@ -101,7 +101,7 @@ export class DataService {
       description:
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam doloribus optio consectetur ex harum debitis, expedita non minima earum voluptatibus molestias deserunt fugiat necessitatibus et aspernatur cum quisquam rerum suscipit!',
       author: 'John Grisham',
-      rating: '4',
+      rating: '3-5',
       price: '8.06',
       imageURL: '../assets/placeholder-image.png',
       publisher: 'Dell',
@@ -161,7 +161,7 @@ export class DataService {
       description:
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam doloribus optio consectetur ex harum debitis, expedita non minima earum voluptatibus molestias deserunt fugiat necessitatibus et aspernatur cum quisquam rerum suscipit!',
       author: 'Lisa Jewell ',
-      rating: '4',
+      rating: '2',
       price: '22.64',
       imageURL: '../assets/placeholder-image.png',
       publisher: 'Grand Central Publishing',
@@ -176,7 +176,7 @@ export class DataService {
       description:
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam doloribus optio consectetur ex harum debitis, expedita non minima earum voluptatibus molestias deserunt fugiat necessitatibus et aspernatur cum quisquam rerum suscipit!',
       author: 'Shari Lapena, Karissa Vacker',
-      rating: '4',
+      rating: '3',
       price: '17',
       imageURL: '../assets/placeholder-image.png',
       publisher: 'Penguin Audio',

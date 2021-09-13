@@ -38,34 +38,28 @@
             </div>
             <div class="row">
               <div class="col-12">
-                <div class="product-container">
-                  <span class="title"><strong>Price: </strong></span>
+                <div class="product-container d-flex">
+                  <span class="title me-2"><strong>Price: </strong></span>
                   <span class="value strike"> {{book.price | currency}} </span>
                 </div>
-                <div class="product-container">
-                  <span class="title"><strong>Rating: </strong></span>
-                  <span class="value strike">
-                    <p class="rating m-0 my-2 d-inline-block">
-                      <span class="fas fa-star checked"></span>
-                      <span class="fas fa-star checked"></span>
-                      <span class="fas fa-star checked"></span>
-                      <span class="far fa-star"></span>
-                      <span class="far fa-star"></span>
-                    </p>
+                <div class="product-container d-flex my-2">
+                  <span class="title me-2"><strong>Rating: </strong></span>
+                  <span class="value strike rating">
+                    <i class="a-icon a-icon-star d-inline-block" [ngClass]="'a-star-'+book.rating"></i>
                   </span>
                 </div>
-                <div class="product-container">
-                  <span class="title"><strong>Qty: </strong></span>
+                <div class="product-container d-flex">
+                  <span class="title me-2"><strong>Qty: </strong></span>
                   <span class="value strike">
                     <input type="number" class="input-mini form-control"/>
                   </span>
                 </div>
-                <div class="product-container p-3">
+                <div class="product-container d-flex p-3">
                   <button class="btn btn-primary d_btn" type="submit">Add to cart <i class="fas fa-shopping-cart"></i></button>
                   <button class="btn btn-primary d_btn mx-2" type="submit"><i class="fas fa-heart"></i></button>
                 </div>
                 <div class="product-container">
-                  <span class="title"><strong>Product details: </strong></span>
+                  <span class="title me-2"><strong>Product details: </strong></span>
                   <div class="">
                     <table class="table">
                       <tbody>

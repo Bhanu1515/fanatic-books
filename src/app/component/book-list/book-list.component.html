@@ -14,24 +14,20 @@
                   <h5 class="card-title">{{book.title}}</h5>
                   <p class="auth m-0"> by {{book.author}}</p>
                   <p class="rating m-0 my-2">
-                    <span class="fas fa-star checked"></span>
-                    <span class="fas fa-star checked"></span>
-                    <span class="fas fa-star checked"></span>
-                    <span class="far fa-star"></span>
-                    <span class="far fa-star"></span>
+                    <i class="a-icon a-icon-star" [ngClass]="'a-star-'+book.rating"></i>
                   </p>
                   <p class="price m-0">{{book.price | currency }}</p>
                 </div>
               </section>
               <section class="sec-2 d-flex align-items-center">
                 <div class="card-body">
-                  <h5 class="card-title text-white">Description:</h5>
+                  <h5 class="card-title">Description:</h5>
                   <p class="des mb-3">
                     {{book.description}}
                   </p>
-                  <div class="d-flex justify-content-around">
-                    <a type="button" class="btn btn-outline-light">Add to Cart</a>
-                    <a [routerLink]="['/booklist', book.id]" type="button" class="btn btn-outline-light">Details </a>
+                  <div class="d-flex">
+                    <a type="button" class="btn btn-outline-success">Add to Cart</a>
+                    <a [routerLink]="['/booklist', book.id]" type="button" class="btn btn-outline-success mx-3">Details </a>
                   </div>
                 </div>
               </section>
