@@ -46,6 +46,8 @@
       .btn{
         color: $green;
         border-color: $green;
+        font-size: .8rem;
+        font-weight: 600;
         &:hover{
           color: $white;
           background-color: $green;
