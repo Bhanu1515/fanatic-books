@@ -1,0 +1,158 @@
+@import "../../../../theme/variables";
+@import "../../../../theme/font";
+
+header {
+  position: relative;
+  z-index: 2;
+  nav {
+    .navbar-brand {
+      font-family: Mostin;
+      text-align: center;
+      border-right: 3px solid $green;
+      padding: 0 20px 0 0;
+      letter-spacing: 2px;
+      .logo_F {
+        display: block;
+        font-size: 1.3rem;
+      }
+      .logo_B {
+        display: block;
+        font-size: 0.8rem;
+      }
+    }
+    .container {
+      position: relative;
+    }
+    .top_nav {
+      .nav-item {
+        padding: 1rem 0;
+        a.nav-link {
+          color: $white;
+          transition: all 0.1s ease 0.1s;
+        }
+        a.nav-link:hover {
+          font-weight: 800;
+          font-style: italic;
+        }
+        &:hover .sub_nav {
+          display: block;
+        }
+      }
+      .nav-item-active {
+        font-weight: 800;
+        font-style: italic;
+      }
+      .sub_nav {
+        display: none;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 50px;
+        background-color: $white;
+        z-index: -1;
+        .row-margin {
+          margin: 2rem 1.5rem !important;
+        }
+        .list-group {
+          border-right: 2px solid $light-gray;
+          .list-group-item {
+            border: none;
+            a {
+              color: $medium-gray;
+              font-weight: 600;
+              text-transform: uppercase;
+              transition: all 0.1s ease 0.1s;
+              text-decoration: none;
+            }
+          }
+
+          .list-group-item a:hover {
+            color: $green;
+            font-style: italic;
+            font-weight: 700;
+          }
+          .head-item {
+            color: $orange;
+            font-weight: 600;
+          }
+          .selected-item a {
+            color: $green;
+            font-style: italic;
+            font-weight: 700;
+          }
+        }
+        .left-col {
+          .list-group-item {
+            padding-left: 20px;
+          }
+        }
+        .right-col {
+          font-size: 13px;
+          .list-group {
+            margin-bottom: 2vh;
+            border: none;
+            .list-group-item {
+              text-transform: none;
+              padding: 0.2rem 1rem;
+              a {
+                text-transform: none;
+                color: $primary;
+                font-weight: 500;
+                padding-left: 20px;
+              }
+              .active,
+              a:hover {
+                font-weight: 700;
+                font-style: italic;
+              }
+            }
+            .head-item {
+              color: $dark-gray;
+            }
+          }
+        }
+      }
+    }
+    form {
+      width: 30vw;
+    }
+    .shipcart {
+      position: relative;
+      .bell-badge {
+        position: absolute !important;
+        font-size: 16px;
+        top: -4px;
+        right: 8px;
+        color: $light-green !important;
+      }
+      i {
+        font-size: 25px;
+      }
+    }
+    .b_more .dropdown-toggle::after {
+      display: none;
+    }
+    .dropdown-menu {
+      .dropdown-item {
+        font-size: 14px !important;
+        color: $medium-gray;
+        transition: all 0.1s ease 0.1s;
+        &:hover {
+          font-style: italic;
+          color: $green;
+          font-weight: 500;
+          background-color: $light-gray;
+        }
+      }
+    }
+    .user {
+      padding: .8rem 0;
+      .isShow {
+        display: none;
+      }
+      &:hover .isShow {
+        display: block !important;
+      }
+    }
+  }
+}

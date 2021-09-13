@@ -1,0 +1,54 @@
+@import "../../../theme/variables";
+
+.mystery_and_crime_wrapper {
+  height: 100%;
+  float: left;
+  width: 100%;
+  .app-title {
+    color: $primary;
+  }
+  .books_wrapper {
+    padding-top: 10px;
+  }
+  .rating {
+    .checked {
+      color: $orange;
+    }
+  }
+  .price {
+    color: $medium-gray;
+  }
+  .card {
+    min-height: 345px;
+    position: relative;
+    .card-title {
+      color: $dark-gray;
+    }
+    .sec-1,
+    .sec-2 {
+      position: relative;
+      left: 0;
+      top: 0;
+      height: 100%;
+      transition: height 0.3s linear 0.1s;
+      overflow: hidden;
+      background-color: $white;
+    }
+    .sec-2 {
+      position: absolute;
+      height: 0;
+      background-color: $black;
+      opacity: 0.82;
+      color: $white;
+    }
+    &:hover .sec-2 {
+      height: 100%;
+    }
+  }
+  .page-item a {
+    color: $primary;
+  }
+  .disabled a {
+    color: $medium-gray;
+  }
+}

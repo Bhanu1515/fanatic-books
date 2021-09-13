@@ -1,0 +1,91 @@
+@import "../../../theme/variables";
+
+.details_wrapper {
+  height: 100%;
+  float: left;
+  width: 100%;
+  .link-btn {
+    text-decoration: none;
+    color: $primary;
+    padding: 0;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .breadcrumb {
+    .breadcrumb-item a {
+      color: $primary;
+      cursor: pointer;
+      transition: all 0.1s ease 0.1s;
+      text-decoration: none;
+      &:hover {
+        color: $green;
+        font-weight: 600;
+        font-style: italic;
+      }
+    }
+    .d_active {
+      color: $primary;
+      &:hover {
+        color: $primary;
+        cursor: default;
+      }
+    }
+    .active {
+      color: $green;
+      font-weight: 600;
+      font-style: italic;
+    }
+  }
+  .books_wrapper {
+    .img_wrapper {
+      .img_container {
+        width: 35vw;
+        img {
+          width: 80%;
+          margin: auto;
+          display: block;
+          height: auto;
+        }
+      }
+    }
+    .details_wrapper {
+      .book-name {
+        color: $primary;
+      }
+      .checked {
+        color: $orange;
+      }
+      .input-mini {
+        width: 60px !important;
+        margin-left: 10px;
+        display: inline;
+      }
+      .d_btn {
+        background-color: $primary;
+        &:hover {
+          background-color: $dark-blue;
+        }
+      }
+    }
+    table {
+      margin: 20px 0;
+      width: 100%;
+      th,
+      td {
+        padding: 10px;
+      }
+      th {
+        color: $white;
+        background: $primary;
+      }
+    }
+    .slider-wrapper {
+      width: 100%;
+      height: 500px;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}

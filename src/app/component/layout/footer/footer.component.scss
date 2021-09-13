@@ -1,0 +1,46 @@
+@import "../../../../theme/variables";
+
+footer {
+  .footer-bottom {
+    padding: 40px 0;
+    text-align: center;
+    background: $dark-gray;
+    .copyright-text {
+      text-transform: capitalize;
+      font-weight: 400;
+      margin-top: 20px;
+      line-height: 24px;
+      color: $light-gray;
+      opacity: 0.8;
+      margin-bottom: 0;
+    }
+    .nav {
+      .nav-link {
+        color: $light-gray;
+        opacity: 0.8;
+        padding: 0 0.5rem;
+        border-right: 1px solid;
+        &:last-child {
+          border: none;
+        }
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .navbar-brand {
+    font-family: Mostin;
+    text-align: center;
+    border-right: 3px solid $green;
+    padding: 0 20px 0 0;
+    .logo_F {
+      display: block;
+      font-size: 16px;
+    }
+    .logo_B {
+      display: block;
+      font-size: 11px;
+    }
+  }
+}

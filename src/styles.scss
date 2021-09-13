@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+@import './theme/variables';
+
+*{
+  padding: 0px;
+  margin: 0px;
+}
+.bg_primary {
+  background-color: $primary;
+}
+.bg_secondary {
+  background-color: $secondary !important;
+}
+.bg_light{
+  background-color: $light-gray;
+}
+.bg_dark{
+  background-color: $dark-gray;
+}
+.bg_white{
+  background-color: $white;
+}
+
+.wrapper{
+  width: 100vw;
+  height: 100vh;
+  font-size: 14px;
+  position: relative;
+  z-index: 0;
+}
+
+
+@media (min-width: 1300px) {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 90% !important;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1300px){
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 95% !important;
+  }
+  .col-xl-3 {
+    width: 33.33333333% !important;
+}
+
+}

@@ -1,0 +1,61 @@
+<div class="mystery_and_crime_wrapper row">
+  <div class="container-fluid">
+    <div class="app-title d-flex justify-content-between mb-3">
+      <h3 class="h3">Mystery and Crime</h3>
+    </div>
+    <div class="books_wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3" *ngFor='let book of bookLists'>
+            <div class="card shadow mb-5 bg-white rounded">
+              <section class="sec-1">
+                <img [src]="book.imageURL" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">{{book.title}}</h5>
+                  <p class="auth m-0"> by {{book.author}}</p>
+                  <p class="rating m-0 my-2">
+                    <span class="fas fa-star checked"></span>
+                    <span class="fas fa-star checked"></span>
+                    <span class="fas fa-star checked"></span>
+                    <span class="far fa-star"></span>
+                    <span class="far fa-star"></span>
+                  </p>
+                  <p class="price m-0">{{book.price | currency }}</p>
+                </div>
+              </section>
+              <section class="sec-2 d-flex align-items-center">
+                <div class="card-body">
+                  <h5 class="card-title text-white">Description:</h5>
+                  <p class="des mb-3">
+                    {{book.description}}
+                  </p>
+                  <div class="d-flex justify-content-around">
+                    <a type="button" class="btn btn-outline-light">Add to Cart</a>
+                    <a [routerLink]="['/booklist', book.id]" type="button" class="btn btn-outline-light">Details </a>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                  <a class="page-link" tabindex="-1">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link">1</a></li>
+                <li class="page-item"><a class="page-link">2</a></li>
+                <li class="page-item"><a class="page-link">3</a></li>
+                <li class="page-item">
+                  <a class="page-link">Next</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

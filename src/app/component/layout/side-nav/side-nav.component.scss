@@ -1,0 +1,35 @@
+@import "../../../../theme/variables";
+
+.side-nav {
+  min-width: 275px;
+  .fiction-head-txt {
+    color: $green;
+    font-size: 3rem;
+    margin: 0;
+  }
+  .list-group-item {
+    border: none;
+    text-transform: none;
+    padding: 0.2rem 0rem;
+    width: 85%;
+    a {
+      color: $primary;
+      font-weight: 500;
+      padding-left: 20px;
+      transition: all 0.1s ease 0.1s;
+      text-decoration: none;
+    }
+    .active,
+    a:hover {
+      font-weight: 700;
+      font-style: italic;
+    }
+  }
+  .head-item {
+    color: $dark-gray;
+    font-weight: 600;
+  }
+  .head1-item {
+    color: $medium-gray;
+  }
+}

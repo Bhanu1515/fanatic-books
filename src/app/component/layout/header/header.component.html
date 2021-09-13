@@ -1,0 +1,148 @@
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg_primary p-0">
+    <div class="container">
+      <a class="navbar-brand" routerLink="/booklist">
+        <span class="logo_F">Fanatic</span><span class="logo_B">Books</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto top_nav">
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive='active'>Biography</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-item-active" routerLinkActive='active'>Fiction</a>
+            <ul class="sub_nav shadow">
+              <div class="sub_nav_container">
+                <div class="row row-margin">
+                  <div class="col-3 left-col">
+                    <ul class="list-group">
+                      <li class="list-group-item head-item">SALE</li>
+                      <li class="list-group-item"> <a routerLinkActive='active'>Biography</a></li>
+                      <li class="list-group-item"> <a routerLinkActive='active'>Business</a></li>
+                      <li class="list-group-item"> <a routerLinkActive='active'>Cookbooks</a></li>
+                      <li class="list-group-item selected-item"><a routerLinkActive='active'>Fiction</a></li>
+                      <li class="list-group-item"> <a routerLinkActive='active'>Health & Fitness</a></li>
+                      <li class="list-group-item"> <a routerLinkActive='active'>History</a></li>
+                      <li class="list-group-item"> <a routerLinkActive='active'>Religion</a></li>
+                      <li class="list-group-item"> <a routerLinkActive='active'>Inspiration</a></li>
+                      <li class="list-group-item"> <a routerLinkActive='active'>Self-Improvement</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-9 right-col">
+                    <div class="row">
+                      <div class="col-4">
+                        <ul class="list-group">
+                          <li class="list-group-item head-item">Action & Fun Reads</li>
+                          <li class="list-group-item"> <a routerLinkActive='active'>Graphic Novels & Comic Books</a>
+                          </li>
+                          <li class="list-group-item"> <a routerLinkActive='active'>Historical Fiction</a></li>
+                          <li class="list-group-item"> <a routerLinkActive='active'>Teen Fiction</a></li>
+                        </ul>
+                        <ul class="list-group mt-3">
+                          <li class="list-group-item head-item">History & Criticism</li>
+                          <li class="list-group-item"> <a routerLinkActive='active'>African American Fiction</a></li>
+                          <li class="list-group-item"> <a routerLinkActive='active'>Christian Fiction</a></li>
+                          <li class="list-group-item"> <a routerLinkActive='active'>Crime</a></li>
+                          <li class="list-group-item"><a routerLinkActive='active'>Historical Fiction</a></li>
+                          <li class="list-group-item"><a routerLinkActive='active'>War & Military Fiction</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-4">
+                        <ul class="list-group">
+                          <li class="list-group-item head-item">Dark, Horror & Fantasy</li>
+                          <li class="list-group-item"> <a routerLinkActive='active'>Horror</a></li>
+                          <li class="list-group-item"> <a routerLinkActive='active'>Thrillers</a></li>
+                          <li class="list-group-item"> <a routerLinkActive='active' routerLink="/booklist">Mystery &
+                              Crime</a></li>
+                          <li class="list-group-item"><a routerLinkActive='active'>Folklore & Mythology</a></li>
+                          <li class="list-group-item"><a routerLinkActive='active'>Sci-Fi & Fantasy</a></li>
+                        </ul>
+                        <ul class="list-group mt-3">
+                          <li class="list-group-item head-item">Classics</li>
+                          <li class="list-group-item"> <a routerLinkActive='active'>Fiction & Literature Classics</a>
+                          </li>
+                          <li class="list-group-item"> <a routerLinkActive='active'>Love & Romance</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-4">
+                        <ul class="list-group">
+                          <li class="list-group-item head-item">People & Nature</li>
+                          <li class="list-group-item"> <a routerLinkActive='active'>Nautical & Maritime Fiction</a></li>
+                          <li class="list-group-item"> <a routerLinkActive='active'>People & Cultures</a></li>
+                          <li class="list-group-item"> <a routerLinkActive='active'>Westerns</a></li>
+                          <li class="list-group-item"><a routerLinkActive='active'>Women's Fiction</a></li>
+                          <li class="list-group-item"><a routerLinkActive='active'>World Literature</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive='active'>Inspiration</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive='active'>History</a>
+          </li>
+          <li class="nav-item dropdown b_more">
+            <a class="nav-link dropdown-toggle text-white fw-bold" routerLinkActive='active' id="navbarDropdown"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa fa-book" aria-hidden="true"></i>
+              Browse more
+            </a>
+            <ul class="sub_nav shadow dropdown-menu pt-4">
+              <li><a class="dropdown-item">Business</a></li>
+              <li><a class="dropdown-item">Cookbooks</a></li>
+              <li><a class="dropdown-item">Health & Fitness</a></li>
+              <li><a class="dropdown-item">Religion & Inspiration</a></li>
+              <li><a class="dropdown-item">Self-Improvement</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="navbar-nav my-2 my-lg-0 d-flex align-items-center w-100 d-flex justify-content-end">
+          <li class="nav-item">
+            <form class="">
+              <div class="input-group">
+                <input class="form-control border-0" type="search" placeholder="Search books by tiltle, author, genres"
+                  aria-label="Search">
+                <span class="input-group-text border-0 p-0 bg_secondary" id="basic-addon2">
+                  <button class="btn" type="submit">
+                    <i class="fa fa-search text-white" aria-hidden="true"></i>
+                  </button>
+                </span>
+              </div>
+            </form>
+          </li>
+          <li class="nav-item user mx-4">
+            <span class="userName text-white">Hi, Jane Doe</span>
+            <div class="userDetails dropdown">
+              <a class="nav-link dropdown-toggle text-white p-0 fw-bold" routerLinkActive='active' id="navbarDropdown"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                My Account
+              </a>
+            </div>
+            <ul class="shadow dropdown-menu mt-2 isShow" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" routerLinkActive='active'><i class="fas fa-user me-3"></i>  Profile</a></li>
+              <li><a class="dropdown-item" routerLinkActive='active'><i class="fas fa-sign-out-alt me-3"></i> Log Out</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <div class="shipcart">
+              <button class="btn brdr-0 notify pl-0" type="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <i class="fa fa-shopping-cart text-white"></i>
+                <span routerLinkActive='active' class="badge text-success bell-badge">0</span>
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

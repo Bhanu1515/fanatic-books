@@ -1,0 +1,132 @@
+<div class="details_wrapper row">
+  <div class="container-fluid">
+    <nav aria-label="breadcrumb" class="shadow p-3">
+      <ol class="breadcrumb m-0">
+        <li class="breadcrumb-item d_active">
+          <i class="fas fa-home"></i>
+        </li>
+        <li class="breadcrumb-item">
+          <a [routerLink]="['/booklist']">Mystery and Crime</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">
+          Details
+        </li>
+      </ol>
+    </nav>
+    <section class="books_wrapper mt-5">
+      <div class="container-fluid">
+        <div class="d-flex align-items-stretch">
+          <div class="flex-shrink-1 img_wrapper">
+            <div class="img_container">
+              <img class="shadow" [src]="book.imageURL"/>
+              <div class="product-container mt-5">
+                <h4 class="h4">Product Description:</h4>
+                <div class="my-3">
+                  <p class="mb-1">
+                    {{book.description}}
+                  </p>
+                  <button type="button" class="btn btn-link link-btn">Read more...</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="details_wrapper">
+            <div class="row">
+              <div class="col-12">
+                <h1 class="h1 book-name">{{book.title}}</h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="product-container">
+                  <span class="title"><strong>Price: </strong></span>
+                  <span class="value strike"> {{book.price | currency}} </span>
+                </div>
+                <div class="product-container">
+                  <span class="title"><strong>Rating: </strong></span>
+                  <span class="value strike">
+                    <p class="rating m-0 my-2 d-inline-block">
+                      <span class="fas fa-star checked"></span>
+                      <span class="fas fa-star checked"></span>
+                      <span class="fas fa-star checked"></span>
+                      <span class="far fa-star"></span>
+                      <span class="far fa-star"></span>
+                    </p>
+                  </span>
+                </div>
+                <div class="product-container">
+                  <span class="title"><strong>Qty: </strong></span>
+                  <span class="value strike">
+                    <input type="number" class="input-mini form-control"/>
+                  </span>
+                </div>
+                <div class="product-container p-3">
+                  <button class="btn btn-primary d_btn" type="submit">Add to cart <i class="fas fa-shopping-cart"></i></button>
+                  <button class="btn btn-primary d_btn mx-2" type="submit"><i class="fas fa-heart"></i></button>
+                </div>
+                <div class="product-container">
+                  <span class="title"><strong>Product details: </strong></span>
+                  <div class="">
+                    <table class="table">
+                      <tbody>
+                        <tr>
+                          <th>Book details</th>
+                          <th></th>
+                        </tr>
+                        <tr>
+                          <td>Book name</td>
+                          <td>{{book.title}}</td>
+                        </tr>
+                        <tr>
+                          <td>Publisher</td>
+                          <td>{{book.publisher}}</td>
+                        </tr>
+                        <tr>
+                          <td>Language</td>
+                          <td>{{book.language}}</td>
+                        </tr>
+                        <tr>
+                          <td>Paperback</td>
+                          <td>{{book.paperback}}</td>
+                        </tr>
+                        <tr>
+                          <td>Item Weight</td>
+                          <td>{{book.itemWeight}}</td>
+                        </tr>
+                        <tr>
+                          <td>Dimensions</td>
+                          <td>{{book.dimensions}}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="">
+              <h4 class="h4">Related products</h4>
+            </div>
+            <div class="slider-wrapper">
+              <ng-image-slider #nav
+                [images]="imageObject"
+                [infinite]="true"
+                [autoSlide]="1"
+                [imagePopup]="false"
+                [videoAutoPlay]='true'
+                [imageSize]="{width: '25%', height: 200}"
+                slideImage="1"></ng-image-slider>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
